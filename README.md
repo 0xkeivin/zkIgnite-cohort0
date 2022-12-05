@@ -23,3 +23,5 @@ npm install -g zkapp-cli
 ## Tutorial 2 - Private Inputs and Hash Functions
 - all inputs to a smart contract are private by default unless the Developer chose to store values on-chain state in zkApp Account
 
+## Tutorial 3 - Deploying to network
+- `zk config` configures cli deployments
