@@ -25,3 +25,19 @@ npm install -g zkapp-cli
 
 ## Tutorial 3 - Deploying to network
 - `zk config` configures cli deployments
+
+## Tutorial 4 - Proof Authorization
+```
+cd contracts 
+npm run build
+
+zk deploy berkeley
+# returned https://berkeley.minaexplorer.com/transaction/CkpZajqcj8EA74fEkU5YGhotxt776GruCEZpETa8vBNDTHL2WUMao 
+
+```
+- web app checks and logs in user based on key in Auro wallet 
+
+## Tutorial 5 - Common Types and Functions
+- `CircuitString` currently only supports fixed length strings of 128 characters 
+- dynamic length strings support to be added in future
+- `Witness` represents merkle path to the data which inclusion is proven 
