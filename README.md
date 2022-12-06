@@ -41,3 +41,10 @@ zk deploy berkeley
 - `CircuitString` currently only supports fixed length strings of 128 characters 
 - dynamic length strings support to be added in future
 - `Witness` represents merkle path to the data which inclusion is proven 
+
+## Tutorial 6 - Off-chain storage
+- 3 pieces of state in contract
+a) public key of storage server
+b) storageNumber itself
+c) storageTreeRoot - root of merkle tree
+
