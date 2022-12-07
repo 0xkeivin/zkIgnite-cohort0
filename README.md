@@ -48,3 +48,21 @@ a) public key of storage server
 b) storageNumber itself
 c) storageTreeRoot - root of merkle tree
 
+## Tutorial 7 - Oracles
+- oracles retrieve data from the outside world
+- example fetches mock credit score and creates attestations for it
+- Mina's zkOracles allow trustless retrieval of data from the outside world in future
+- Data providers can act as response signers and hence do without intermediaries
+### Design
+- fetch data from desired source
+- sign data with Mina-compatible private key and returns data, signature and public key
+- signature can be verified by zkApp
+
+### Response format
+1. Data - JSON payload of customized data
+2. Signature  - r and s fields of ECDSA signature which are unique codes dervied form message and private key
+3. Public key
+
+### Demo Oracle endpoints
+https://mina-credit-score-signer-pe3eh.ondigitalocean.app/user/1
+https://mina-credit-score-signer-pe3eh.ondigitalocean.app/user/2
